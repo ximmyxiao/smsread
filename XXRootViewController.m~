@@ -139,7 +139,7 @@
 #ifdef INDEBUG
     self.dbPath = [[NSBundle mainBundle] pathForResource:@"sms" ofType:@"db"];
     
-#else
+#elseif no_debug
     self.dbPath = @"/var/mobile/Library/SMS/sms.db";
 #endif
 }
