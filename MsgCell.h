@@ -12,6 +12,7 @@
 @property(nonatomic,strong) NSString* msgsender;
 @property(nonatomic,strong) NSString* msgTime;
 @property(nonatomic,strong) NSString* msgContent;
+@property(nonatomic,assign) BOOL isSend;
 
 @end
 
@@ -20,4 +21,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *contentLabel;
 @property(nonatomic,strong) MsgModel* model;
+@property(nonatomic,strong) NSString* msgContent;
 @end
