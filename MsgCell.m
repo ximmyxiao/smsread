@@ -26,7 +26,7 @@
         [self.contentView addSubview:self.authorLabel];
         [self.contentView addSubview:self.timeLabel];
         [self.contentView addSubview:self.contentLabel];
-        
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
 
     }
     return self;

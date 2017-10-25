@@ -6,6 +6,7 @@
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	_window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 	_rootViewController = [[UINavigationController alloc] initWithRootViewController:[[XXRootViewController alloc] init]];
+	_rootViewController.navigationController.navigationBar.translucent = NO;
 	_window.rootViewController = _rootViewController;
 	[_window makeKeyAndVisible];
 }
